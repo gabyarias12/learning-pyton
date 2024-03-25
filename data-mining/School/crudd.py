@@ -1,6 +1,11 @@
-from school_db import con, cur, sqlite3
+import os
 from datetime import datetime
-import os 
+from school_db import con, cur  # Asumiendo que estás utilizando con y cur de school_db
+
+# Código que hace uso de las variables con y cur de school_db
+
+# Si no necesitas sqlite3, elimina la importación
+# Si planeas usar sqlite3 más adelante en tu código, asegúrate de agregar código que lo utilice
 
 status_menu = True
 global status_op
