@@ -28,9 +28,9 @@ def create_country(op):
 
 def create_department(op):
   os.system('clear')
-  nombre = input("Ingrese el nombre del departamento: ")
-  abreviatura = input("Ingrese la abreviatura del departamento: ")
-  descripcion = input("Ingrese la descripción del departamento: ")
+  nombre = input("Nombre del departamento: ")
+  abreviatura = input("Abreviatura del departamento: ")
+  descripcion = input("Descripción del departamento: ")
   cur.execute("SELECT * FROM Country")
   paises = cur.fetchall()
   print("Países disponibles:")
@@ -53,9 +53,9 @@ def create_department(op):
 def create_city(op):
     os.system('clear')
 
-    nombre = input("Ingrese el nombre de la ciudad: ")
-    abreviatura = input("Ingrese la abreviatura de la ciudad: ")
-    descripcion = input("Ingrese la descripción de la ciudad: ")
+    nombre = input("Nombre de la ciudad: ")
+    abreviatura = input("Abreviatura de la ciudad: ")
+    descripcion = input("Descripción de la ciudad: ")
     cur.execute("SELECT * FROM Department")
     departamentos = cur.fetchall()
     # Mostramos la lista de departamentos al usuario
